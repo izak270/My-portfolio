@@ -5,12 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faItalic } from "@fortawesome/free-solid-svg-icons";
 export default function Header(props) {
   return (
-    <div className="headerContainer">
-      <FontAwesomeIcon icon={faItalic} className = 'icon'/>
+    <div className={props.headerClass}>
+      <FontAwesomeIcon icon={faItalic} className="icon" />
       <div className="tags">
-        <Tag defenitation="protfolio"></Tag>
-        <Tag defenitation="protfolio"></Tag>
-        <Tag defenitation="protfolio"></Tag>
+        <Tag href="#myWorks" defenitation="My works"></Tag>
+        <Tag href="#education" defenitation="Education"></Tag>
+        <Tag href="#profolio" defenitation="protfolio"></Tag>
       </div>
     </div>
   );
